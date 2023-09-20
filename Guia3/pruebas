@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char caracter;
+    int cantVocalesMayusculas = 0;
+    int cantVocalesMinusculas = 0;
+
+    printf("Ingresa un texto (finaliza con asterisco '*'):\n");
+
+    do {
+        scanf("%c", &caracter);
+
+        // Verificar si es una vocal mayúscula
+        if (caracter == 'A' || caracter == 'E' || caracter == 'I' || caracter == 'O' || caracter == 'U') {
+            cantVocalesMayusculas++;
+        }
+
+        // Verificar si es una vocal minúscula
+        if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
+            cantVocalesMinusculas++;
+        }
+    } while (caracter != '*');
+
+    printf("Cantidad de vocales mayúsculas: %d\n", cantVocalesMayusculas);
+    printf("Cantidad de vocales minúsculas: %d\n", cantVocalesMinusculas);
+
+    return 0;
+}
