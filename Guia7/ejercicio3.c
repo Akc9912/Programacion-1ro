@@ -3,9 +3,10 @@
 #include "libreria.h"
 #include <string.h>
 
-void cargarAudio(t_audio *x);
+void cargarAudio(t_audio *equipo);
 void mostrarAudio(t_audio x);
-void mostrarSi(t_audio x);
+int verificaPais(t_audio equipo);
+void mostrarSi(t_audio equipo);
 
 int main()
 {

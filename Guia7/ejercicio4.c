@@ -3,9 +3,13 @@
 #include <string.h>
 #include "libreria.h"
 
+void cargarEncuesta(t_encuesta *encuesta);
+void mostrarEncuesta(t_encuesta encuesta);
+
 int main()
 {
-    int N;
-    printf("Ingrese el numero de personas a encuestar: ");
-    scanf("%d", &N);
+    t_encuesta persona;
+    system("cls");
+    cargarEncuesta(&persona);
+    mostrarEncuesta(persona);
 }
