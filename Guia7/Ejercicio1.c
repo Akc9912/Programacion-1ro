@@ -2,4 +2,6 @@
 #include <stdlib.h>
 #include "libreria.h"
 
-//prueba 1
+int main(){
+    
+}

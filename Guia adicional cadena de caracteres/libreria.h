@@ -159,15 +159,22 @@ int validarEmail(char cadena[])
     {
         if (cadena[i] == '@')
         {
-            arroba = 1;
+            arroba++;
         }
         else if (cadena[i] == '.')
         {
-            punto = 1;
+            punto++;
         }
     }
 
-    return arroba && punto;
+    if (punto == 1 && arroba == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 void ingresarEmail()
 {
@@ -176,7 +183,7 @@ void ingresarEmail()
     printf("Ingrese un email: ");
     scanf("%s", email);
 
-    if (validarEmail(email))
+    if (validarEmail(email) == 1)
     {
         printf("El email es valido.\n");
     }
