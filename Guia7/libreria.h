@@ -95,7 +95,7 @@ void mostrarEncuesta(t_encuesta encuesta)
         printf("Consume el producto: %s\n", encuesta.consume);
     }
 }
-void cargarVectosEncuesta(t_encuesta vector[], int n)
+/*void cargarVectosEncuesta(t_encuesta vector[], int n)
 {
     int i;
     t_encuesta persona;
@@ -104,3 +104,4 @@ void cargarVectosEncuesta(t_encuesta vector[], int n)
         vector[i] = cargarEncuesta(&persona);
     }
 }
+*/
