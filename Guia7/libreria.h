@@ -83,6 +83,7 @@ void cargarEncuesta(t_encuesta *encuesta)
         printf("Consume el producto XXX (si/no): ");
         scanf(" %2s", aux.consume);
     }
+    printf("----------------------------------------------------------------------------\n");
     *encuesta = aux;
 }
 void mostrarEncuesta(t_encuesta encuesta)
@@ -94,13 +95,24 @@ void mostrarEncuesta(t_encuesta encuesta)
     {
         printf("Consume el producto: %s\n", encuesta.consume);
     }
+    printf("----------------------------------------------------------------------------\n");
 }
-void cargarVectosEncuesta(t_encuesta vector[], int n)
+void cargarVectorEncuesta(t_encuesta vector[], int n)
 {
     int i;
     t_encuesta persona;
     for (i = 0; i < n; i++)
     {
-        vector[i] = cargarEncuesta(&persona);
+        cargarEncuesta(&persona);
+        vector[i] = persona;
+    }
+}
+void mostrarVectorEncuesta(t_encuesta vector[], int n)
+{
+    int i;
+    for (i = 0; i < n; i++)
+    {
+        mostrarEncuesta(vector[i]);
+        printf("--------------------------------------------------------\n");
     }
 }
