@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "s:/programacion varios/ISET/Programacion 1ro/practica pre parcial",
-      "program": "s:/programacion varios/ISET/Programacion 1ro/practica pre parcial/build/Debug/outDebug",
+      "cwd": "s:/programacion varios/ISET/Programacion 1ro/Guia5",
+      "program": "s:/programacion varios/ISET/Programacion 1ro/Guia5/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
