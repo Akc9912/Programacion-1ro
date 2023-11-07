@@ -140,6 +140,7 @@ void mostrarVectorfiguras(t_figura vecFiguras[], int x)
 void cargarArchivoBinario(t_figura vecFigura[], int x)
 {
     int i;
+    t_figura
     FILE *archivo;
     archivo = fopen("figuras.dat", "w");
     if (archivo != NULL)
@@ -150,6 +151,7 @@ void cargarArchivoBinario(t_figura vecFigura[], int x)
             if (vecFigura[i].superficie >= 10.5)
             {
                 fwrite(&vecFigura[i], sizeof(t_figura), 1, archivo);
+
             }
         }
         fclose(archivo);
